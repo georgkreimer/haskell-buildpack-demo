@@ -1,0 +1,9 @@
+---
+applications:
+- name: <app-name>
+  buildpack: https://github.com/georgkreimer/yaas-buildpack-haskell
+  instances: 1
+  memory: 512M
+  host: <app-name>
+  domain: <cloud-foundry>
+  command: 
