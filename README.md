@@ -1,26 +1,21 @@
 # Haskell Buildpack Demo
 
-This demo is live on Heroku:
 
-http://haskell-buildpack-demo.herokuapp.com/
+It uses the yaaS Haskell Buildpack:
 
-It uses the Haskell Buildpack:
+https://github.com/georgkreimer/yaas-buildpack-haskell
 
-https://github.com/pufuwozu/heroku-buildpack-haskell
-
-## Pushing to Heroku
+## Pushing to yaaS
 
 Clone this repository:
 
-    git clone https://github.com/pufuwozu/haskell-buildpack-demo.git
+    git clone https://github.com/georgkreimer/haskell-buildpack-demo.git
 
-Create a new Heroku application:
-
-    heroku create --stack=cedar --buildpack https://github.com/pufuwozu/heroku-buildpack-haskell.git
+Adjust the manifest.yml
 
 Push!
 
-    git push heroku master
+    cf push <app-name> -f manifest.yml
 
 *Note*: the push will take some time to install dependencies and might
 not show any output for quite a while. It will also show a lot of
